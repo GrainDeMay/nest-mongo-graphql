@@ -29,12 +29,26 @@
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
+### Installation MongoDB
+```bash
+brew tap mongodb/brew
+brew install mongodb-community
+brew install mongodb-community-shell
+brew services start mongodb-community
+```
 
+### Create MongoDB Database
+
+- Install client mongodb Compass at https://www.mongodb.com/download-center/compass
+
+- On compass : create a new connection with name mongodb://localhost/nest
+
+
+
+## Running the app
 ```bash
 $ npm install
 ```
-
-## Running the app
 
 ```bash
 # development
@@ -46,6 +60,10 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+
+## Access GraphQL Client
+
+Go to localhost:3000/graphql
 
 ## Test
 
